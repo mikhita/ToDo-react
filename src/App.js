@@ -30,12 +30,62 @@ function InputValue(){
     </div>
   )
 }
+
+function Container(){
+  return(
+    <div className='container'>
+      {/* <div className='inputValue'>
+      <input className='checkboxInput' type="checkbox" />
+      <p className='todoTargetText'>alnfceds</p>
+      </div> */}
+    </div>
+  )
+}
+
+function FooterMobile(){
+  return(
+    <div className='itemsAndClearComplite'>
+    <div className='itemsCounter'>
+        <p className='itesmLeft'><span>5</span>items left</p>
+        <p className='clearComplite'>Clear Completed</p>
+    </div>
+    <div className='filterTodosDiv'>
+      <div className='filterComponents'>
+      <p className='all'>All</p>
+      <p className='active'>Active</p>
+      <p className='completed'>Complited</p>
+      </div>
+    </div>
+    <p className='lastText'>Drag and drop to reorder list</p>
+    </div>
+  )
+}
+
+function FooterDesktop(){
+  return(
+    <div className='itemsAndClearCompliteDesktop'>
+    <div className='itemsCounter'>
+        <p className='itesmLeft'><span>5</span>items left</p>
+        <div className='filterComponents'>
+          <p className='all'>All</p>
+          <p className='active'>Active</p>
+          <p className='completed'>Complited</p>
+        </div>
+        <p className='clearComplite'>Clear Completed</p>
+    </div>
+    <p className='lastText'>Drag and drop to reorder list</p>
+    </div>
+    )
+}
 function App() {
   return (
     <>
       <ImageLight />
       <TodoAndThemes/>
       <InputValue/>
+      <Container/>
+      <FooterMobile/>
+      <FooterDesktop/>
     </>
   )
 }
