@@ -3,7 +3,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#root{
-  max-width: 540px;
-  align-self: center;
+@media only screen and (min-width: 600px){
+
+    #root{
+      max-width: 540px;
+      align-self: center;
+    }
 }

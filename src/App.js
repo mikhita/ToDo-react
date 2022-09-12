@@ -21,11 +21,21 @@ function TodoAndThemes(){
     </div>
   )
 }
+
+function InputValue(){
+  return(
+    <div className='inputValue'>
+      <input className='checkboxInput' type="checkbox" />
+      <input className='textInput' type="text" placeholder="Create a new todo…" />
+    </div>
+  )
+}
 function App() {
   return (
     <>
       <ImageLight />
       <TodoAndThemes/>
+      <InputValue/>
     </>
   )
 }
