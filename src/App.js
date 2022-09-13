@@ -46,7 +46,7 @@ function FooterMobile(){
   return(
     <div className='itemsAndClearComplite'>
     <div className='itemsCounter'>
-        <p className='itesmLeft'><span>5</span>items left</p>
+        <p className='itesmLeft'><span>5</span> items left</p>
         <p className='clearComplite'>Clear Completed</p>
     </div>
     <div className='filterTodosDiv'>
@@ -60,18 +60,42 @@ function FooterMobile(){
     </div>
   )
 }
-
+function SpanCounter(){
+  return(
+    <p className='itesmLeft'><span>5</span> items left</p>
+  )
+}
+function FilterAll(){
+  return(
+  <p className='all'>All</p>
+  )
+}
+function FilterActive(){
+  return(
+    <p className='active'>Active</p>
+    )
+}
+function FilterCompleted(){
+  return(
+  <p className='completed'>Complited</p>
+  )
+}
+function ClearComplite(){
+  return(
+    <p className='clearComplite'>Clear Completed</p>
+  )
+}
 function FooterDesktop(){
   return(
     <div className='itemsAndClearCompliteDesktop'>
     <div className='itemsCounter'>
-        <p className='itesmLeft'><span>5</span>items left</p>
+        <SpanCounter/>
         <div className='filterComponents'>
-          <p className='all'>All</p>
-          <p className='active'>Active</p>
-          <p className='completed'>Complited</p>
+          <FilterAll/>
+          <FilterActive/>
+          <FilterCompleted/>
         </div>
-        <p className='clearComplite'>Clear Completed</p>
+        <ClearComplite/>
     </div>
     <p className='lastText'>Drag and drop to reorder list</p>
     </div>
