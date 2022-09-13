@@ -34,11 +34,11 @@ function InputValue(){
 function Container(){
   return(
     <div className='container'>
-      {/* <div className='inputValue'>
+      <div className='inputValue'>
       <input className='checkboxInput' type="checkbox" />
       <p className='todoTargetText'>alnfceds</p>
       </div>
-      <hr/> */}
+      <hr/>
     </div>
   )
 }
