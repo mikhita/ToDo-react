@@ -21,12 +21,17 @@ function TodoAndThemes(){
     </div>
   )
 }
+function InputValues(){
+  return(
+    <input className='textInput' type="text" placeholder="Create a new todo…" />
+  )
+}
 
 function InputValue(){
   return(
     <div className='inputValue'>
       <input className='checkboxInput' type="checkbox" />
-      <input className='textInput' type="text" placeholder="Create a new todo…" />
+      <InputValues/>
     </div>
   )
 }
@@ -34,11 +39,11 @@ function InputValue(){
 function Container(){
   return(
     <div className='container'>
-      <div className='inputValue'>
+      {/* <div className='inputValue'>
       <input className='checkboxInput' type="checkbox" />
-      <p className='todoTargetText'>alnfceds</p>
+      <p className='todoTargetText'>{InputValue.value}</p>
       </div>
-      <hr/>
+      <hr/> */}
     </div>
   )
 }
