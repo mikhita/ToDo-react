@@ -48,12 +48,19 @@ function InputValue(){
   )
 }
 
+function IconCross(){
+  return(
+    <img className='iconCross' src={require('./images/xCross.png')} alt=""/>
+  )
+}
+
 function Container(){
   return(
     <div className='container'>
       {/* <div className='inputValue'>
       <input className='checkboxInput' type="checkbox" />
-      <p className='todoTargetText'>{InputValue.value}</p>
+      <p className='todoTargetText'>{InputValues}</p>
+      <IconCross/>
       </div>
       <hr/> */}
     </div>

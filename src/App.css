@@ -91,6 +91,9 @@ body{
   outline: none;
   text-align: start;
 }
+.iconCross{
+  display: none;
+}
 .itemsCounter p{
   font-family: Josefin Sans;
   font-size: 12px;
