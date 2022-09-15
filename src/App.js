@@ -1,4 +1,4 @@
-
+import {useState} from 'react';
 import './App.css';
 
 function ImageLight(){
@@ -11,13 +11,25 @@ function ImageLight(){
     </div>
   )
 }
+function IconMoon(){
+  return(
+    <img className='icons' src={require('./images/iconMoon.png')} alt=""/>
+  )
+}
+function IconSun(){
+  return(
+    <img className='icons displayNone' src={require('./images/icon-sun.svg')} alt=""/>
+  )
+}
+function handleClickMoon(){
 
+}
 function TodoAndThemes(){
   return(
-    <div className='TodoAndThemes'>
+    <div className='TodoAndThemes' onClick={handleClickMoon}>
       <img className='icons' src={require('./images/TODO.png')} alt=""/>
-      <img className='icons' src={require('./images/iconMoon.png')} alt=""/>
-      <img className='icons displayNone' src={require('./images/icon-sun.svg')} alt=""/>
+      <IconMoon/>
+      <IconSun/>
     </div>
   )
 }
